@@ -234,7 +234,7 @@ sys_sysinfo(void)
 
 uint64 sys_shutdown(void)
 {
-  // printf("Shutdown hear\n");
+  printf("Shutdown hear\n");
   sbi_shutdown();
   return 0;
 }
