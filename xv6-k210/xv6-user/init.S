@@ -14,7 +14,7 @@
 	.string	"getpid"
 	.align	3
 .LC3:
-	.string	"init: exec sh failed\n"
+	.string	"init: exec getpid failed\n"
 	.align	3
 .LC4:
 	.string	"init: wait returned an error\n"

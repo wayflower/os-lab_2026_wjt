@@ -31,8 +31,9 @@ int main(void)
     }
     if (pid == 0)
     {
+      // printf("IIInit.c testing\n");
       exec("getpid", argv);
-      printf("init: exec sh failed\n");
+      printf("init: exec getpid failed\n");
       exit(1);
     }
 
