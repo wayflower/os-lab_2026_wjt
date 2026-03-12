@@ -106,6 +106,8 @@ $T/kernel: $(OBJS) $(linker) $U/initcode
 	@$(OBJDUMP) -t $T/kernel | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$$/d' > $T/kernel.sym
   
 build: $T/kernel userprogs
+	@cp $(T)/kernel kernel-qemu
+	@cp $(RUSTSBI) sbi-qemu
 
 # Compile RustSBI
 RUSTSBI:
